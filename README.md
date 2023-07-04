@@ -121,4 +121,5 @@ Here's the result:
   })
 </script>
 
+---
 > **Note** If you see a bunch of garbled non-sense in above this note, that is because you are note reading this on a Docsify site or with Docsify-This (f.e. you may be reading this on GitHub), and you should click the [first URL above](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/trusktr/docsify-scratchpad/main&homepage=README.md&executeScript=true&toc=true&browser-tab-title=docsify-scratchpad&edit-link=https://github.com/trusktr/docsify-scratchpad/blob/main/README.md&toc-headings=h1,h2&executeScript=true) to view the rendered result.
