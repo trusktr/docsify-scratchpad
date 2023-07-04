@@ -4,8 +4,9 @@ The following is a Lume scene with a box:
 
 <div style="width: 400px; height: 300px;">
   <lume-scene webgl>
-    <lume-point-light color="white" position="0 0 500"></lume-point-light>
-    <lume-box id="box" size="100 100 100" align-point="0.5 0.5 0.5" mount-point="0.5 0.5 0.5" color="royalblue" rotation="10 20 30"></lume-box>
+    <lume-point-light color="white" position="-500 -500 500"></lume-point-light>
+    <lume-box id="box" size="100 100 100" color="royalblue" rotation="10 20 30"></lume-box>
+    <lume-camera-rig initial-distance="200" min-distance="100" max-distance="800"></lume-camera-rig>
   </lume-scene>
 </div>
 <script>
@@ -18,6 +19,6 @@ The following is a Lume scene with a box:
     const {defineElements} = LUME
     defineElements()
     const box = document.querySelector('#box')
-    box.rotation = (x, y, z) => [x, ++y, ++z]
+    box.rotation = (x, y, z) => [x, y+0.2, z+0.2]
   })()
 </script>
