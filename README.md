@@ -4,7 +4,7 @@ This repo is entirely Markdown files compatible with [Docsify](https://docsify.j
 
 We can use [Docsify-This](https://docsify-this.net) to create a shareable URL for viewing this rendering result of this page. Here's a URL created with Docsify-This (click it to view this page with _additional Markdown features not available if you're reading this on GitHub.com_):
 
-> https://docsify-this.net/?basePath=https://raw.githubusercontent.com/trusktr/docsify-scratchpad/main&homepage=README.md&executeScript=true&toc=true&browser-tab-title=docsify-scratchpad&edit-link=https://github.com/trusktr/docsify-scratchpad/blob/main/README.md&toc-headings=h1,h2&executeScript=true
+[See this page rendered with Docsify via Docsify-This.](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/trusktr/docsify-scratchpad/main&homepage=README.md&executeScript=true&toc=true&browser-tab-title=docsify-scratchpad&edit-link=https://github.com/trusktr/docsify-scratchpad/blob/main/README.md&toc-headings=h1,h2&executeScript=true)
 
 # Render Markdown from anywhere in your browser
 
