@@ -1,6 +1,6 @@
 # This is a test
 
-The following is a Lume scene with a box:
+The following is a [Lume](https://lume.io) scene with a rotating box:
 
 <div style="width: 400px; height: 300px;">
   <lume-scene webgl>
@@ -10,16 +10,19 @@ The following is a Lume scene with a box:
     </lume-camera-rig>
   </lume-scene>
 </div>
+
 <script>
-  (async function() {
-    const resp = await fetch('https://unpkg.com/lume@0.3.0-alpha.26/dist/global.js')
-    const code = await resp.text()
+  async function loadScript(URL) {
+    const response = await fetch(URL)
+    const code = await response.text()
     const script = document.createElement('script')
     script.textContent = code
     document.head.append(script)
+  }
+  loadScript('https://unpkg.com/lume@0.3.0-alpha.26/dist/global.js').then(() => {
     const {defineElements} = LUME
-    defineElements()
-    const box = document.querySelector('#box')
-    box.rotation = (x, y, z) => [x, y+0.2, z+0.2]
-  })()
+    defineElements() // defines the Lume elements
+    const box = document.getElementById('box') // get a reference to the <lume-box> element
+    box.rotation = (x, y, z) => [x, y+0.2, z+0.2] // make it rotate
+  })
 </script>
