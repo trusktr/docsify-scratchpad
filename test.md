@@ -15,7 +15,6 @@ The following is a Lume scene with a box:
     const script = document.createElement('script')
     script.textContent = code
     document.head.append(script)
-    
     const {defineElements} = LUME
     defineElements()
     const box = document.querySelector('#box')
