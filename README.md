@@ -2,15 +2,15 @@
 
 This repo is entirely Markdown files compatible with [Docsify](https://docsify.js.org), a tool for rendering sites and pages written in Markdown, without any build tools or command line.
 
-For example, you can use [Docsify-This](https://docsify-this.net) to view this repo like so:
+We can use [Docsify-This](https://docsify-this.net) to create a shareable URL for viewing this rendering result of this page. Here's a URL created with Docsify-This (click it to view this page with _additional Markdown features not available if you're reading this on GitHub.com_):
 
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/trusktr/docsify-scratchpad/main&homepage=README.md&executeScript=true&toc=true&browser-tab-title=docsify-scratchpad&edit-link=https://github.com/trusktr/docsify-scratchpad/blob/main/README.md&toc-headings=h1,h2#/?id=markdown-extras
+> https://docsify-this.net/?basePath=https://raw.githubusercontent.com/trusktr/docsify-scratchpad/main&homepage=README.md&executeScript=true&toc=true&browser-tab-title=docsify-scratchpad&edit-link=https://github.com/trusktr/docsify-scratchpad/blob/main/README.md&toc-headings=h1,h2#/?id=markdown-extras
 
 # Render Markdown from anywhere in your browser
 
 Any of the content on this page can be viewed online using a Docsify-powered site.
 
-[Docsify-This](https://docsify-this.net) is a static Docsify site that specializes exactly this, rendering Markdown files that you give it via URL query parameters. It is a static site (meaning there is no backend, just statically-served files), and it fetches and renders your desired Markdown pages on the fly using Docsify.
+[Docsify-This](https://docsify-this.net) is a static Docsify site that specializes in rendering Markdown files that you give it via URL query parameters (with added Markdown features of Docsify). It is a static site (meaning there is no backend, just statically-served files), and it fetches and renders your desired Markdown pages on the fly with Docsify.
 
 In the above example URL, the options that appear after the `?` are created from the options chosen in the Docsify-This UI before hitting the publish button. If you [learn URL query parameter formatting](https://www.semrush.com/blog/url-parameters/), you can write or edit such URLs manually.
 
@@ -66,6 +66,9 @@ Here's an example where render a 3D scene by writing Lume HTML, where we use a `
     </lume-camera-rig>
   </lume-scene>
 </div>
+<style>
+  lume-scene { border: 1px solid deeppink; }
+</style>
 
 <script>
   async function loadScript(URL) {
@@ -95,9 +98,7 @@ Here's the result:
   </lume-scene>
 </div>
 <style>
-  div {
-    border: 1px solid deeppink;
-  }
+  lume-scene { border: 1px solid deeppink; }
 </style>
 
 <script>
