@@ -1,4 +1,8 @@
-# This is a test
+# Load a Lume scene
+
+LoadView this page in Docsify-This to see it rendered:
+
+https://docsify-this.net/?executeScript=true&basePath=https://raw.githubusercontent.com/trusktr/tmp/main&homepage=test.md#/
 
 The following is a [Lume](https://lume.io) scene with a rotating box:
 
