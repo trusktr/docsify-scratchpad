@@ -4,7 +4,7 @@ This repo is entirely Markdown files compatible with [Docsify](https://docsify.j
 
 We can use [Docsify-This](https://docsify-this.net) to create a shareable URL for viewing this rendering result of this page. Here's a URL created with Docsify-This (click it to view this page with _additional Markdown features not available if you're reading this on GitHub.com_):
 
-> https://docsify-this.net/?basePath=https://raw.githubusercontent.com/trusktr/docsify-scratchpad/main&homepage=README.md&executeScript=true&toc=true&browser-tab-title=docsify-scratchpad&edit-link=https://github.com/trusktr/docsify-scratchpad/blob/main/README.md&toc-headings=h1,h2#/?id=markdown-extras
+> https://docsify-this.net/?basePath=https://raw.githubusercontent.com/trusktr/docsify-scratchpad/main&homepage=README.md&executeScript=true&toc=true&browser-tab-title=docsify-scratchpad&edit-link=https://github.com/trusktr/docsify-scratchpad/blob/main/README.md&toc-headings=h1,h2&executeScript=true
 
 # Render Markdown from anywhere in your browser
 
@@ -55,7 +55,11 @@ Here's a style example. The previous heading is colored due to this Markdown fil
 
 ## Scripts
 
-Here's an example where render a 3D scene by writing Lume HTML, where we use a `<script>` like the following to load Lume's HTML elements.
+You can place a `<script>` tag in your Markdown to execute custom JavaScript logic.
+
+> **Note** You must place `executeScript=true` as a query parameters in your Docsify-This URL to enable script execution.
+
+Here's an example where we render a 3D scene by writing Lume HTML along with a `<script>` tag to load Lume's HTML elements.
 
 ```html
 <div style="width: 400px; height: 300px;">
@@ -117,4 +121,4 @@ Here's the result:
   })
 </script>
 
-> **Note** If you see a bunch of garbled non-sense in below this line, that is because you're reading this on GitHub, not in a Docsify site or with Docsify-This, and you should click the [first URL above](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/trusktr/docsify-scratchpad/main&homepage=README.md&executeScript=true&toc=true&browser-tab-title=docsify-scratchpad&edit-link=https://github.com/trusktr/docsify-scratchpad/blob/main/README.md&toc-headings=h1,h2#/?id=markdown-extras) to view the rendered result.
+> **Note** If you see a bunch of garbled non-sense in above this note, that is because you are note reading this on a Docsify site or with Docsify-This (f.e. you may be reading this on GitHub), and you should click the [first URL above](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/trusktr/docsify-scratchpad/main&homepage=README.md&executeScript=true&toc=true&browser-tab-title=docsify-scratchpad&edit-link=https://github.com/trusktr/docsify-scratchpad/blob/main/README.md&toc-headings=h1,h2&executeScript=true) to view the rendered result.
